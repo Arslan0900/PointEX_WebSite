@@ -1,0 +1,26 @@
+@import url(https://db.onlinewebfonts.com/c/cd89360580e32d720eba8c0bfde221a0?family=Avantt);
+@import "./components/navbar/navbar.scss";
+@import "./components/homepage/home.scss";
+@import "./components/Feature/feature.scss";
+@import "./components/howItsWork/howItsWork.scss";
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color:#ffffff;
+  // width: 100Vh;
+  width: Hug (1,440px);
+height: Hug (3,965px);
+font-family: var(--font-family-arabic);
+}
+
+
+:root {
+  --font-family-arabic: "IBM Plex Sans Arabic",sans-serif;
+  --text-font-family: Avantt Bold;
+  --nav-bg-clr: #635bff; /* Default value */
+  --nav-bg-scroll-clr:#ffffff; /* Default value */
+  
+}
