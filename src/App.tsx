@@ -11,8 +11,8 @@ function App() {
     <div className='main'>
       <Navbar></Navbar>
     <Home></Home>
-    {/* <Feature></Feature>
-    <HowItsWork></HowItsWork> */}
+    <Feature></Feature>
+    <HowItsWork></HowItsWork>
     {/* <div style={{width:"100vw",height:"100vh",background:"red",}}>sda</div> */}
     </div>
     </>
