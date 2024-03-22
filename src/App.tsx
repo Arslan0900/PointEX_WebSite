@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/homepage/Home';
 import Feature from './components/Feature/Feature';
 import HowItsWork from './components/howItsWork/HowItsWork';
+import Group118 from './components/group118/Group118';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Home></Home>
     <Feature></Feature>
     <HowItsWork></HowItsWork>
+    <Group118></Group118>
     {/* <div style={{width:"100vw",height:"100vh",background:"red",}}>sda</div> */}
     </div>
     </>

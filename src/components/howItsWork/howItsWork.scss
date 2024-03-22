@@ -36,9 +36,10 @@
   }
   & .howItswork_box {
     // background-color: aquamarine;
-    width: 100%;
-    // height: 176px;
+    width: 1328;
+    height: 176px;
     border: 1px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +48,7 @@
     & .box {
       width: 296px;
       height: 178px;
-      gap: 16px;
+      // gap: 16px;
       background-color: brown;
     }
   }
