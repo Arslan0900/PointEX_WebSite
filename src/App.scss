@@ -4,6 +4,9 @@
 @import "./components/Feature/feature.scss";
 @import "./components/howItsWork/howItsWork.scss";
 @import "./components/group118/group.scss";
+@import "./components/becomeAPartner/becomeAPartner.scss";
+@import "./components/blog/sectionBlog.scss";
+@import "./components/newsLetter/newsLetter.scss";
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -11,9 +14,9 @@
 }
 body {
   background-color:#ffffff;
-  // width: 100Vh;
-  width: Hug (1,440px);
-height: Hug (3,965px);
+  // width: 100vw;
+//   width: 1440px;
+// height: 3965px;
 font-family: var(--font-family-arabic);
 }
 

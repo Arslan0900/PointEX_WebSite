@@ -5,6 +5,9 @@ import Home from './components/homepage/Home';
 import Feature from './components/Feature/Feature';
 import HowItsWork from './components/howItsWork/HowItsWork';
 import Group118 from './components/group118/Group118';
+import BecomeAPartner from './components/becomeAPartner/BecomeAPartner';
+import Section_blog from './components/blog/Section_blog';
+import NewsLetter from './components/newsLetter/NewsLetter';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
     <Feature></Feature>
     <HowItsWork></HowItsWork>
     <Group118></Group118>
+    <BecomeAPartner></BecomeAPartner>
+    <Section_blog></Section_blog>
+    <NewsLetter></NewsLetter>
     {/* <div style={{width:"100vw",height:"100vh",background:"red",}}>sda</div> */}
     </div>
     </>

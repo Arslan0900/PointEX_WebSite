@@ -10,19 +10,30 @@
   },
   "home": {
     "body": "Your Loyalty Rewards, All Under One Roof.",
-    "btn":"Download App"
+    "btn": "Download App"
   },
   "feature": {
-    "body":"Discover the Heartbeat of your rewards",
-    "heading":"Features",
-    "heading_box1":"All-in-one Hub",
-    "description_box1":"Consolidate your points from multiple partners here, providing a comprehensive 360-degree view.",
-    "heading_box2":"With your mobile number, you can perform a range of actions: register, transfer, and earn!",
-    "description_box2":"All-in-one Hub",
-    "heading_box3":"Earn from All & transfer to Any",
-    "description_box3":"Effortlessly earn rewards from all registered partners and redeem them with any of them.",
-    "heading_box4":"Voucher Friendly",
-    "description_box4":"Generate and utilize valuable vouchers that are accepted by a wide range of partners."
-    
+    "body": "Discover the Heartbeat of your rewards",
+    "heading": "Features",
+    "heading_box1": "All-in-one Hub",
+    "description_box1": "Consolidate your points from multiple partners here, providing a comprehensive 360-degree view.",
+    "heading_box2": "Your Phone Number is the Key",
+    "description_box2": "With your mobile number, you can perform a range of actions: register, transfer, and earn!",
+    "heading_box3": "Earn from All & transfer to Any",
+    "description_box3": "Effortlessly earn rewards from all registered partners and redeem them with any of them.",
+    "heading_box4": "Voucher Friendly",
+    "description_box4": "Generate and utilize valuable vouchers that are accepted by a wide range of partners."
+  },
+  "howItswork": {
+    "paragraph":"Discover the magic behind our product",
+    "heading":"How PointEX works?",
+    "box1_heading":"Register",
+    "box1_text":"Register in one step by phone number",
+    "box2_heading":"Transfer",
+    "box2_text":"Tranfer pointEX to registered partners",
+    "box3_heading":"View",
+    "box3_text":"Have 360 view of registered partners points",
+    "box4_heading":"Redeem",
+    "box4_text":"Redeem rewards,Reep the benifits!"
   }
 }

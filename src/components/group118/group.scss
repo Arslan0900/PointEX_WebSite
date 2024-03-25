@@ -2,11 +2,11 @@
   width: 100%;
   height: auto;
   //   top: 1146px;
-  background-color: rgb(239, 239, 255);
+  background: linear-gradient(#efefff, #50b1e4); /* From blue to purple */
   display: flex;
   justify-content: center;
   & .text_image_box {
-    background-color: blueviolet;
+    // background-color: blueviolet;
     width: 880px;
     height: 248px;
     // top: 1146px;
@@ -20,29 +20,52 @@
       //   left: 280px;
       padding: 32px 0px 32px 0px;
       gap: 16px;
-      background-color: rgb(0, 255, 26);
+    //   background-color: rgb(0, 255, 26);
       & .text {
         width: 544px;
         height: 112px;
-        background-color: rgb(203, 87, 124);
+        // background-color: rgb(203, 87, 124);
+        & p {
+          //styleName: Heading Desktop/H1 Normal;
+          font-family: var(--font-family-arabic);
+          font-size: 46px;
+          font-weight: 400;
+          line-height: 56px;
+          letter-spacing: 0px;
+          text-align: left;
+        }
+        & h2 {
+          width: 134px;
+          height: 56px;
+          font-size: 46px;
+          & span {
+              font-weight: 600;
+            color: #635bff;
+
+
+          }
+        }
       }
       & .btn {
         width: 208px;
         height: 56px;
         padding: 16;
         gap: 8px;
-        border-radius: 8;
-        background: #635BFF;
-
+        border-radius: 8px;
+        background: #635bff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        
       }
     }
   }
   & .img_box {
     width: 544px;
-height: 248px;
-// top: 1146px;
-// left: 616px;
-background-color: rgb(226, 197, 77);
-
+    height: 248px;
+    // top: 1146px;
+    // left: 616px;
+    // background: rgb(226, 197, 77);
   }
 }
