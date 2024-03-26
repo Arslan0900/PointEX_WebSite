@@ -30,13 +30,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     & .box {
-      width: 332px;
+      // width: 332px;
       height: 264px;
-      padding: 0px 8px 0px 8px;
+      // padding: 0px 8px 0px 8px;
       gap: 24px;
-      //   background-color: bisque;
+        // background-color: bisque;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      // align-items: center;
       & .box_svg {
         width: 124px;
         height: 124px;
