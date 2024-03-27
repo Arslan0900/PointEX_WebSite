@@ -96,3 +96,105 @@
     }
   }
 }
+
+@media screen and (max-width: 780px) {
+  .blog {
+    background-color: rgb(246, 248, 250);
+  //   background-color: rgb(116, 176, 235);
+    width: 100%;
+    height: 100%;
+    padding: 46px 16px 46px 16px;
+    gap: 32px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  
+    & .blog_frame1 {
+      width: 100%;
+      height: 84px;
+      gap: 8px;
+      // background-color: aquamarine;
+  
+      & p {
+        //styleName: Heading Desktop/H5 Normal;
+        font-family: var(--font-family-arabic);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0px;
+        //   text-align: left;
+      }
+      & h3 {
+        //styleName: Heading Desktop/H2 Bold;
+        font-family: var(--font-family-arabic);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0px;
+        //   text-align: left;
+      }
+    }
+    & .blog_frame2 {
+      width: 100%;
+      height: 100%;
+      gap: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // background-color: burlywood;
+      flex-wrap: nowrap;
+      flex-direction: column;
+  
+      & .blog_frame2_box1 {
+        width: 100%;
+          height: 100%;
+        gap: 32px;
+        // background-color: chartreuse;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        & .frame2_box1_img_box {
+          width: 100%;
+          height: 100%;
+          // background-color: lightcoral;
+          & img {
+            width: 100%;
+            height: 200px;
+            border-radius: 16px;
+  
+            object-fit: cover;
+          }
+        }
+        & .frame2_box1_text_box {
+          width: 100%;
+          height: 100%;
+          gap: 16px;
+          // background-color: lightseagreen;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+  
+          & h3 {
+            //styleName: Heading Desktop/H5 Bold;
+            font-family: var(--font-family-arabic);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0px;
+            //   text-align: left;
+          }
+          & p {
+            //styleName: Body/Body Normal;
+            font-family: var(--font-family-arabic);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0px;
+          //   text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

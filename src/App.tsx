@@ -16,7 +16,7 @@ function App() {
     <div className='main'>
       <Navbar></Navbar>
     <Home></Home>
-    <Feature></Feature>
+     <Feature></Feature>
     <HowItsWork></HowItsWork>
     <Group118></Group118>
     <BecomeAPartner></BecomeAPartner>

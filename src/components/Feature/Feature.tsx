@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const Feature = () => {
   const [t, i18n] = useTranslation("global");
-  const currentLanguage = i18n.resolvedLanguage;
+  // const currentLanguage = i18n.resolvedLanguage;
   return (
     <>
     <div className='Feature'>

@@ -118,30 +118,30 @@
 
 @media screen and (max-width: 1064px) {
   .home-container {
-  padding: 192px 16px 0px 16px;
-     & .left-box {
-       & .text_btn_container {
-         & .text-box {
-           min-width: 300px;
-         }
-       }
-       & .phone_img {
-         & img {
-           width: 291.53px;
-         }
-       }
-     }
-     & .right-box {
-       & .card_img {
-         & img {
-           width: 368px;
-           height: 233.56px;
-         }
-       }
-     }
-   }
- }
- @media screen and (max-width: 980px) {
+    padding: 192px 16px 0px 16px;
+    & .left-box {
+      & .text_btn_container {
+        & .text-box {
+          min-width: 300px;
+        }
+      }
+      & .phone_img {
+        & img {
+          width: 291.53px;
+        }
+      }
+    }
+    & .right-box {
+      & .card_img {
+        & img {
+          width: 368px;
+          height: 233.56px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
   .home-container {
     max-width: 100%;
     height: 100%;
@@ -159,8 +159,8 @@
       gap: 20px;
       // background: red;
       display: flex;
-      align-items: baseline;
-  
+      // align-items: baseline;
+
       & .text_btn_container {
         display: flex;
         //   flex-wrap: wrap;
@@ -171,8 +171,8 @@
         height: auto;
         //   padding: 0px 0px 192px 0px;
         //   gap: 32px;
-          // background: lightblue;
-  
+        // background: lightblue;
+
         & .text-box {
           min-width: 340px;
           display: flex;
@@ -182,7 +182,7 @@
           padding-bottom: 20px;
           color: #ffffff;
           // background-color: aquamarine;
-  
+
           & h2 {
             font-family: var(--text-font-family);
             font-size: 60px;
@@ -220,7 +220,7 @@
       // background: rgb(70, 189, 229);
       display: flex;
       justify-content: center;
-  
+
       & .phone_img {
         // position: absolute;
         width: 368px;
@@ -230,7 +230,7 @@
         display: flex;
         justify-content: center;
         // align-items: center;
-  
+
         // background: rgb(33, 194, 28);
         & img {
           // display: none;
@@ -258,4 +258,125 @@
       }
     }
   }
- }
+}
+@media screen and (max-width: 480px) {
+  .home-container {
+    max-width: 100%;
+    height: 100%;
+    padding: 152px 16px 0px 16px;
+    gap: 20px;
+    background: #635bff;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    & .left-box {
+      width: 100%;
+      height: auto;
+      padding: 0px 0px 46px 0px;
+      gap: 20px;
+      // background: red;
+      display: flex;
+      // align-items: baseline;
+
+      & .text_btn_container {
+        width: 100%;
+        height: 217px;
+        gap: 32px;
+        opacity: 0px;
+        display: flex;
+        // background-color: aqua;
+        //   flex-wrap: wrap;
+        //   overflow: hidden;
+        flex-direction: column;
+        //   align-items: baseline;
+        //   width: 654px;
+        height: auto;
+        //   padding: 0px 0px 192px 0px;
+        //   gap: 32px;
+        // background: lightblue;
+
+        & .text-box {
+          min-width: 100%;
+          display: flex;
+          // flex-wrap: nowrap;
+          // overflow: hidden;
+          // height: 219px;
+          padding-bottom: 20px;
+          color: #ffffff;
+          // background-color: aquamarine;
+
+          & h2 {
+            font-family: var(--text-font-family);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 42.92px;
+          }
+        }
+        & .button-box {
+          width: 142px;
+          height: 56px;
+          padding: 16px;
+          gap: 8px;
+          border-radius: 8px;
+          border: 1px;
+          background: #ffffff;
+          & p {
+            //styleName: Links/Button;
+            font-family: var(--font-family-arabic);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    & .right-box {
+      width: 100%;
+      height: 100%;
+      padding: 0px 0px 40px 0px;
+      gap: 20px;
+      // background: rgb(70, 189, 229);
+      display: flex;
+      justify-content: center;
+
+      & .phone_img {
+        // position: absolute;
+        width: 291.53px;
+        height: 589px;
+        // top: 162px;
+        // left: 934px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+
+        // background: rgb(33, 194, 28);
+        & img {
+          // display: none;
+          // object-fit: fill;
+          width: 77vw;
+          // height: 589px;
+          // top: 162px;
+          // left: 972px;
+        }
+      }
+      & .card_img {
+        position: absolute;
+        // width: 368px;
+        // height: 233.56px;
+        // top: 206px;
+        // left: 934px;
+        padding-top: 45px;
+        & img {
+          // object-fit: fill;
+          width: 90vw;
+          height: 223.56px;
+          // top: 206px;
+          // left: 934px;
+        }
+      }
+    }
+  }
+}

@@ -1,18 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const [t, i18n] = useTranslation("global");
+  const [currentLanguage, setCurrentLanguage] = useState("en");
+  const handleChangeLanguage = () => {
+    const newLanguage = currentLanguage === "en" ? "ar" : "en";
+    setCurrentLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
+
+    if (newLanguage === "en") {
+      // Change body direction to LTR for English
+      document.body.style.direction = "ltr";
+    } else {
+      // Change body direction to RTL for Arabic
+      document.body.style.direction = "rtl";
+    }
+  };
+
+
   return (
     <div className="Footer">
       <div className="footer_frame">
         <div className="logo"><h2><span>Point</span>EX</h2></div>
         <div className="nav">
           <ul>
-            <li>Our Product</li>
+            <li>{t("NavItems.Our Products")}</li>
             <li>Download App</li>
             <li>Terms & conditions</li>
-            <li>Become a partner</li>
-            <li>Contect Us</li>
-            <li>العربية</li>
+            <li>{t("NavItems.become a Partner!")}</li>
+            <li>{t("NavItems.Contect us")}</li>
+            <p onClick={() => { handleChangeLanguage(); }}>{currentLanguage === "en" ? "العربية" : "English"}</p>
           </ul>
         </div>
         <div className="social_links_frame">

@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 const Navbar = () => {
   const [t, i18n] = useTranslation("global");
   const [currentLanguage, setCurrentLanguage] = useState("en");
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false); // State to manage navbar visibility
-  const [isScrolled, setIsScrolled] = useState(false); // State to manage scroll position
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); 
 
   const handleChangeLanguage = () => {
     const newLanguage = currentLanguage === "en" ? "ar" : "en";
@@ -13,10 +13,8 @@ const Navbar = () => {
     i18n.changeLanguage(newLanguage);
 
     if (newLanguage === "en") {
-      // Change body direction to LTR for English
       document.body.style.direction = "ltr";
     } else {
-      // Change body direction to RTL for Arabic
       document.body.style.direction = "rtl";
     }
   };
@@ -26,35 +24,29 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    // If scroll position is greater than 0, set isScrolled to true, otherwise set it to false
     setIsScrolled(window.scrollY > 150);
   };
 
   useEffect(() => {
-    // Function to handle viewport width change
-    const handleResize = () => {
-      // Close navbar when viewport width changes
-      setIsNavbarOpen(!isNavbarOpen);
-    };
-
-    // Add event listener for resize event
-    window.addEventListener("resize", handleResize);
-
-    // Remove event listener when component unmounts
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []); // Empty dependency array ensures effect runs only once on component mount
-
-  useEffect(() => {
-    // Add event listener for scroll event
     window.addEventListener("scroll", handleScroll);
-
-    // Remove event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Empty dependency array ensures effect runs only once on component mount
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        // Close navbar only if viewport width is greater than 768 pixels
+        setIsNavbarOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className={`navbar second ${isScrolled ? 'scrolled' : ''}`}>
